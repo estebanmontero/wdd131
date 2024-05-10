@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Esteban Montero</title>
+    <meta
+      name="description" 
+      content="this webiste is an assignment that demonstrate my knowledge by applying HTML and CSS in the course Web Frontend Development  WDD131 in Byui university " />
+    <meta
+      name="author"
+      content="Esteban Montero"/>
+    <link rel="stylesheet" href="styles/base.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+      
 </head>
 <body>
-    <h1>WDD131-ESTEBAN MONTERO</h1>
-    
-</body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Esteban Montero</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/obrian-esteban-montero-erasso-a79516b7/">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/courses/296022">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/4?lang=eng&id=p30#p30">Favorite Scripture</a></li>
+                <li><a href="Final Project folder link. This will just be a placeholder for now.">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>ABOUT ME</h2>
+            <img src="images/placeholder.png" alt="Esteban Montero" style="width: 100%; max-width: 200px;" align="right">
+            <p>My name is Esteban Montero I live in  Colombia Medellin, I am a techear of piano and violin 
+                I've always had some passions apart of the music, the  technology and business ;
+                for this reason I take these courses to delve deeper into this field, I like so much to travel specially with my family, only me and my wife.</p>
+
+        </section>
+
+        <section class="card">
+            <h2>COLOMBIA MEDELLIN</h2>
+            <p>Colombia is a biodiverse and multicultural country. 
+                Its landscapes, its people and its culture are such 
+                particular attributes in each city or department that 
+                sometimes, when moving from one region to another, it 
+                seems as if a change of country had occurred. 
+                In Colombia you have the opportunity to live 
+                many different experiences in the same country
+                since it has different thermal floors. 
+                Through its center run the towering, 
+                snow-covered volcanoes and mountains of the Andes. 
+                Tropical beaches line the north and west. 
+                And there are deserts in the north and vast grasslands, called Los Llanos, in the east..</p>
+            <h2>DEV TOOLS</h2>    
+            <p href="#">Link 1</p>
+            <p href="#"> Link 2</p>
+            <p href="#"> Link 3</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Esteban Montero - Colombia-Medellin</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+    </script>
 </html>
