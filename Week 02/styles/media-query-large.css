@@ -1,12 +1,12 @@
 @media screen and (min-width: 500px) {
     header {
-        background-color: black; /* Black background */
-        color: white; /* White text */
+        background-color: black; 
+        color: white; 
     }
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns of equal size */
-        gap: 1rem; /* Gap between grid items */
+        grid-template-columns: 1fr 1fr; 
+        gap: 1rem; 
     }
 }
