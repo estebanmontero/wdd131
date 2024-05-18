@@ -1,0 +1,13 @@
+* {
+    --primary-color: #013468;
+    --primary-font-color: white;
+}
+
+
+body {  
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    min-height: 1vh;
+}
+
