@@ -70,6 +70,17 @@ figcaption {
     text-align: center;
 }
 
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; 
+    color: #fff; 
+}
+
+footer a {
+    color: #ff5722; 
+}
+
 
 @media (max-width: 479px) {
     main {
