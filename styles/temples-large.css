@@ -66,6 +66,10 @@ img {
     height: auto; 
 }
 
+figcaption {
+    text-align: center;
+}
+
 
 @media (max-width: 479px) {
     main {
