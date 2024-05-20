@@ -1,91 +1,95 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
 
 header {
-    background-color: #bbb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #333;
+    color: white;
     padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-main {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 20px; 
+h1 {
+    margin: 0;
 }
-
-h1, h2 {
-    font-size: 2rem;
-}
-
 
 nav {
-    background-color: #36454f;
-    margin: 0 auto; 
-    text-align: center; 
+    margin-left: auto; /* Aligns the nav to the left */
+    display: flex;
+    align-items: center; /* Center vertically */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-
+    margin: 0;
+    display: flex; /* Display list items horizontally */
 }
 
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: overline; 
+nav ul li a:hover {
+    background-color: #555;
 }
 
-.active {
-    color: yellow;
+h2 {
+    text-align: center;
 }
 
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
 
-img {
-    max-width: 100%; 
-    height: auto; 
+figure {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 figcaption {
-    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
 }
 
 footer a {
-    color: #ff5722; 
-}
-
-
-@media (max-width: 479px) {
-    main {
-        display: block; 
-    }
+    color: #d27ac8;
 }
 
 
