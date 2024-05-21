@@ -18,16 +18,71 @@
 
     main {
         padding: 10px;
-        display: block;
-        text-align: center;
+        display: block; 
     }
 
-    figure {
+    main figure {
         margin: 0 auto 20px;
-        display: block;
-        
+        text-align: center; 
+    }
+    
+   
+    main {
+        display: block; 
+    }
+
+
+
+
+
+    #menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 100; 
+    }
+
+    #menu::before {
+    content: "☰";
+    }
+
+    #menu.open::before {
+    content: "❎";
+    }
+
+    .navigation {
+    display: none; 
+    }
+
+
+    #menu.open + nav .navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    position: absolute; 
+    top: 60px; 
+    right: 0;
+    width: 100%;
+    z-index: 90; 
+    }
+
+    #menu.open + nav .navigation a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    }
+
+    #menu.open + nav .navigation a:hover {
+    background-color: #555;
     }
 }
+
 
 
 

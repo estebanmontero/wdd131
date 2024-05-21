@@ -25,16 +25,16 @@ h1 {
 }
 
 nav {
-    margin-left: auto; /* Aligns the nav to the left */
+    margin-left: auto; 
     display: flex;
-    align-items: center; /* Center vertically */
+    align-items: center; 
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Display list items horizontally */
+    display: flex; 
 }
 
 nav ul li {
