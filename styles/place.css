@@ -1,0 +1,146 @@
+:root {
+    --general-font: "Arial", sans-serif;
+    --primary-color: #1a237e; /* Indigo */
+    --secondary-color: #d32f2f; /* Red */
+    --primary-font-color: #ffffff;
+    --weather-icon: url(../images/new-weather-icon.svg);
+}
+
+body {
+    font-family: var(--general-font);
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    background-color: #f0f4c3; /* Light Green */
+    color: #1a237e; /* Indigo */
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 1em;
+    margin: 0;
+    color: var(--primary-font-color);
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+picture {
+    background-color: var(--secondary-color);
+    padding: 1em;
+}
+
+.card {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1em 0;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100px;
+    margin: 0;
+}
+
+.card table {
+    width: 100%;
+    margin-top: 1em;
+}
+
+th, td {
+    padding: 0.5em;
+}
+
+th {
+    text-align: right;
+    color: var(--primary-color);
+}
+
+td {
+    text-align: left;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+    color: var(--primary-font-color);
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 750px) {
+    h1 {
+        padding: 1.5em;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        position: relative;
+        right: 0;
+        text-align: left;
+        color: var(--primary-color);
+        background-color: rgba(29, 233, 182, 0.8); /* Teal */
+        padding: 1em;
+        margin: 1em 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card img {
+        display: block;
+        width: 120px;
+        margin-right: 1em;
+    }
+
+    main {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 2em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .temp {
+        position: relative;
+        width: 300px;
+        margin: 2em auto;
+        text-align: center;
+    }
+
+    .temp h2::after {
+        content: " ";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: var(--weather-icon);
+        background-size: cover;
+        margin-left: 0.5em;
+    }
+
+    .data {
+        width: 400px;
+        margin: 2em auto;
+        padding: 1em;
+        background-color: #e3f2fd; /* Light Blue */
+        border-radius: 8px;
+    }
+}

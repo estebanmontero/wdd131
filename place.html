@@ -13,19 +13,79 @@
 <body>
     <header>
         <h1>Medellin - Colombia</h1>
+        <nav>
+            <ul>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#weather">Data</a></li>
+                <li><a href="#attractions">Data</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <picture>
-            <source media="(min-width: 1000px)" srcset="images/hero.webp">
-            <source media="(min-width: 500px )"  srcset="images/">
-            <img src="images/">
-
-
-
-
-
+            <source media="(min-width: 1000px)" srcset="images/hero-large-medellin.webp">
+            <source media="(min-width: 500px)" srcset="images/hero-medium-medellin.webp">
+            <img src="images/hero-small-medellin.webp" alt="Medellin">
         </picture>
+        <section class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>city:</th>
+                    <td>Medellin</td>
+                </tr>
+                <tr>
+                    <th>Area:</th>
+                    <td>382 km²</td>
+                </tr>
+                <tr>
+                    <th>Department:</th>
+                    <td>Antioquia</td>
+                </tr>
+                <tr>
+                    <th>Founded:</th>
+                    <td>1616</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>Spanish</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Colombian Peso</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC -5:00</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+57</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card attractions" id="attractions">
+            <h2>Attractions</h2>
+            <ul>
+                <li>Parque Arví</li>
+                <li>Plaza Botero</li>
+                <li>Comuna 13 Graffiti Tour</li>
+                <li>Pueblito Paisa</li>
+            </ul>
+        </section>
+        <section class="card image">
+            <h2>Beautiful Views</h2>
+            <figure>
+                <img src="images/medellin-landscape.webp" alt="Medelin 2" width="400">
+                <figcaption>One of the stunning landscapes in Medellín.</figcaption>
+            </figure>
+        </section>
+
+
+
+          
+
 
     </main>
     
