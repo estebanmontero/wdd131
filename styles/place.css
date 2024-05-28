@@ -1,18 +1,22 @@
+
+
 :root {
     --general-font: "Arial", sans-serif;
-    --primary-color: #1a237e; /* Indigo */
-    --secondary-color: #d32f2f; /* Red */
+    --primary-color: #000000; 
+    --secondary-color: #921616;
     --primary-font-color: #ffffff;
-    --weather-icon: url(../images/new-weather-icon.svg);
+    --weather-icon: url(../images/wheter-icon.svg);
 }
+
+
 
 body {
     font-family: var(--general-font);
     max-width: 1200px;
     margin: auto;
     min-height: 100vh;
-    background-color: #f0f4c3; /* Light Green */
-    color: #1a237e; /* Indigo */
+    background-color: #000000; 
+    color: #1a237e; 
 }
 
 header {
@@ -140,7 +144,7 @@ footer {
         width: 400px;
         margin: 2em auto;
         padding: 1em;
-        background-color: #e3f2fd; /* Light Blue */
+        background-color: #e3f2fd; 
         border-radius: 8px;
     }
 }
