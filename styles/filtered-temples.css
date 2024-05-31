@@ -1,0 +1,84 @@
+@media screen and (max-width: 475px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+
+
+    main {
+        padding: 10px;
+    }
+
+    main figure {
+        margin: 0 auto 20px;
+        text-align: center; 
+    }
+
+    /* Hide navigation links */
+    nav ul li {
+        display: none;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute; 
+        top: 20px; 
+        right: 20px; 
+        z-index: 100; 
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❎";
+    }
+
+    /* Display navigation links when menu is open */
+    #menu.open + nav ul li {
+        display: block;
+    }
+
+    /* Styles for the navigation menu */
+    #menu.open + nav .navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        color: #fff;
+        position: absolute; 
+        top: 60px; 
+        right: 0;
+        width: 100%;
+        z-index: 90;
+    }
+
+    #menu.open + nav .navigation a {
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+
+    #menu.open + nav .navigation a:hover {
+        background-color: #555;
+    }
+
+
+    
+}

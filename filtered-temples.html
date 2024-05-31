@@ -6,11 +6,11 @@
     <title>WDD 131 - TEMPLE ALBUM </title>
     <meta name="description" content="A temple album page with selections of temple pictures">
     <meta name="author" content="Esteban Montero">
-    <link rel="stylesheet" href="styles/temples.css"> 
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css"> 
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
@@ -33,10 +33,16 @@
     </header>
     <h2>Home</h2>
     <main>
-        <h2 id="selection">Home</h2>
-        <div id="gallery">
 
+        <div id="filter">
+            <label for="filterCriteria">Filter by:</label>
+            <select id="filterCriteria">
+                <option value="all">All</option>
+                <option value="new">New</option>
+                <option value="old">Old</option>
+            </select>
         </div>
+        <div id="gallery"></div>
        
     </main>
     
