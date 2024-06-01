@@ -68,7 +68,7 @@ const temples = [
         location: "Washington, United States",
         dedicated: "2001, November, 18",
         area: 16880,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/89b209718a7ed41649a497893e240972b7cfd036/full/320%2C/0/default.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/columbia-river-washington/400x250/columbia-river-temple-lds-130323-wallpaper.jpg"
     }
 ];
 
