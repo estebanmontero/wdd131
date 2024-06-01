@@ -12,7 +12,7 @@
 
 body {
     font-family: var(--general-font);
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     min-height: 100vh;
     background-color: #000000; 
@@ -43,7 +43,7 @@ img {
 
 picture {
     background-color: var(--secondary-color);
-    padding: 1em;
+    
 }
 
 .card {
@@ -95,7 +95,7 @@ footer {
     h2 {
         position: relative;
         right: 0;
-        text-align: left;
+        text-align: center;
         color: var(--primary-color);
         background-color: rgba(29, 233, 182, 0.8); /* Teal */
         padding: 1em;
