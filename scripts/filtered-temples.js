@@ -61,7 +61,7 @@ const temples = [
         location: "Bogota Colombia",
         dedicated: "1999, April, 24",
         area: 53500,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/89b209718a7ed41649a497893e240972b7cfd036/full/320%2C/0/default.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/400x250/bogota-colombia-temple-lds-1029726-wallpaper.jpg"
     },
     {
         templeName: "Columbia River Washington",
