@@ -1,0 +1,59 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #F0F0F0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #003366;
+}
+
+.accent {
+    color: #FFD700;
+}
+
+header, footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+
+}
+
+
+.footer {
+    text-align: center;
+}
+
+centered-markers {
+    list-style: none; /* Remove default markers */
+    padding: 0;
+    position: relative;
+}
+
+.markers li {
+    margin-left: 20px; /* Adjust to fit your desired spacing */
+    position: relative;
+    padding-left: 20px; /* Adjust to fit your desired spacing */
+}
+
+.markers li::before {
+    content: '•'; /* Custom marker */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Adjust size if necessary */
+    color: #003366; /* Adjust color if necessary */
+}
