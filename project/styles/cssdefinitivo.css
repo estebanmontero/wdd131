@@ -67,6 +67,22 @@ nav a:hover {
     color: var(--bright-font);
 }
 
+
+/* picture piano box*/
+
+
+
+/* Adjust the positioning of the image within the music-box */
+#music-box img {
+    max-width: 100%; /* Ensure the image does not exceed the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+
 /* Hamburger Menu Styles */
 #menu {
 
