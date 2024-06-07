@@ -1,0 +1,138 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans&display=swap');
+
+/* Define CSS Variables */
+:root {
+    --font-titles: "Electrolize", sans-serif;
+    --font-p: "Fira Sans", sans-serif;
+    --primary-color-bg: #003366; 
+    --secondary-color-bg: #ffffff;
+    --accent-color: #FFD700;
+    --bright-font: #fff;
+    --dark-font: #000;
+    --light-shadow: 0 0 1em .5em #777;
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-p);
+    max-width: 1500px;
+    margin: auto;
+    background-color: var(--primary-color-bg); 
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--secondary-color-bg);
+    color: var(--dark-font);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo {
+    width: 80px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--secondary-color-bg);
+    padding: 10px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-font);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bright-font);
+}
+
+/* Hero Section Styles */
+#hero {
+    padding: 20px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+#music-box {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    body {
+        max-width: 1000px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 250px) {
+    body {
+        max-width: 250px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #hero {
+        padding: 10px;
+    }
+
+    #hero img {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,473 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans&display=swap');
+
+/* Define CSS Variables */
+:root {
+    --font-titles: "Electrolize", sans-serif;
+    --font-p: "Fira Sans", sans-serif;
+    --primary-color-bg: #003366; 
+    --secondary-color-bg: #ffffff;
+    --accent-color: #FFD700;
+    --bright-font: #fff;
+    --dark-font: #000;
+    --light-shadow: 0 0 1em .5em #777;
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: var(--font-p);
+    max-width: 1500px;
+    margin: auto;
+    background-color: var(--primary-color-bg); 
+    padding: 0;
+    
+
+}
+
+/* Header Styles */
+header {
+    background-color: var(--secondary-color-bg);
+    color: var(--dark-font);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo {
+    width: 80px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--secondary-color-bg);
+    padding: 10px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-font);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bright-font);
+}
+
+/* Hamburger Menu Styles */
+#menu {
+
+    font-size: 1.5rem;
+    background-color: var(--primary-color-bg);
+    color: var(--bright-font);
+    border: none;
+    margin: 0;
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    order:0;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 100; 
+
+
+
+
+}
+
+#menu:hover {
+    text-shadow: 0 0 .2em #fff;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+/* Responsive Styles for Larger Screens */
+@media (max-width: 1000px) {
+    body {
+        max-width: 1000px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    #menu {
+        display: block; /* Show menu button on smaller screens */
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav a.active {
+        display: block;
+        color: #FF785A;
+        text-decoration: underline 2px;
+    }
+
+    .open, .open a {
+        display: block;
+    }
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 250px) {
+    body {
+        max-width: 250px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #hero {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #hero img {
+        width: 100%;
+    }
+
+    nav a:hover {
+        border-bottom: 3px solid yellow;
+        font-weight: 700;
+        border-radius: 0 0 .5em .5em;
+    }
+
+    nav, a {
+        margin: 0;
+    }
+
+ 
+
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+
+}
+
+
+
+.elementor-button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+
+    color: #33bd11; /* Set your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.book {
+
+
+    justify-content: center;
+    background-color: aqua;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 1.25rem;
+    padding: 20px 15px;
+    padding-top: 18px;
+
+
+    margin-top: 0px;
+
+}
+
+.book:hover, .join:hover{
+    background-color: rgb(196, 217, 56);
+    color: #d9c2a3;
+}
+
+
+
+
+/*courses*/
+
+/* courses */
+
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(13, 1fr) ;
+    color: #ffffff;
+}
+             
+.card-img  {
+    width:100%
+}    
+
+
+
+
+
+.Beginners{
+    grid-column: 2/5;
+    grid-row: 1/3;
+}
+
+.Intermediate{
+    grid-column: 6/9;
+    grid-row: 1/3;
+
+}
+
+.Advanced{
+    grid-column: 10/13;
+    grid-row: 1/3;
+    color:#ffffff;
+}
+
+/*responsive design*/
+
+
+@media screen and (max-width: 900px) {
+    #hero, .courses-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+
+
+}
+            
+
+#discover-msg{
+    text-align: center;
+}
+
+#background-contact{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color:#f89d00;
+}
+
+.contactus{    
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.contactus p {
+    color: white;
+}
+
+/* footer */
+
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+footer a {
+    background-color: rgb(174, 162, 162);
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: rgb(173, 149, 149);
+    color: #d9c2a3;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* main grid */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.msg-week,
+.msg-member,
+.chart{
+    background-color: #f89d00;
+    color: var(--secondary-color-bg);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.msg-week {
+    grid-column: 1; 
+    grid-row: 1; 
+}
+
+.msg-member {
+    grid-column: 2; 
+    grid-row: 1; 
+}
+
+.chart {
+    grid-column: 1/3; 
+    grid-row: 2/3; 
+}
+
+.msg-interactive {
+    grid-column: 1/3; 
+    grid-row: 2/3; 
+    z-index: 1; 
+}
+
+.msg-week h2,
+.msg-member h2,
+.msg-interactive p {
+    margin: 40;
+}
+
+
+.msg-week{
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 70%; 
+    text-align: center;
+
+}
+
+
+.msg-member {    
+    
+    box-sizing: border-box;
+    width: 100%; 
+    height: 70%; 
+    text-align: center;
+
+
+}
+.chart
+ {
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.msg-interactive
+ {
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 0%; 
+    color: var(--secondary-color-bg);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    main {
+        display: block;
+    }
+
+    .msg-week,
+    .msg-member,
+    .chart,
+    .msg-interactive {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Add some spacing between elements */
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="styles/cssdefinitivo.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="Harmony Music Academy">
+        </a>
+        <button id="menu"></button> <!-- Hamburger Menu Button -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="form.html">Feedback Form</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="music-box">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large-piano.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium-piano.webp">
+                <img src="images/hero-small-piano.webp" alt="Piano, Violin, and Guitar">
+            </picture>
+        </div>
+        <section id="hero-msg">
+
+            <div class="button-box">
+                <a class="book" href="contactus.html">Sign up Now</a>
+            </div>
+            <a class="elementor-button" href="https://wa.link/jbov5e">
+                <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">WHATSAPP CALL NOW</span>
+                </span>
+            </a>
+        </section>
+    </div>
+    <main class="home-grid">
+        <section class="msg-week">
+            <h2>Monthly Membership</h2>
+            <p>$49.99 USD +TAX</p>
+        </section>
+        <section class="msg-member">
+            <h2>52 WEEK</h2>
+            <p>Beginner/Intermediate/Advanced - Piano, Violin, Guitar Lessons - Private Sessions</p>
+            <a class='join' href="contactus.html">Sign up Now </a>
+        </section>
+
+
+        <div class="msg-interactive">
+            <h2>Site Purpose</h2>
+            <p>Explore  Music Academy's COURSES for learning and mastering your instrument. </p>
+            <h1>Elevate your musical journey with us!</h1>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  Music Academy - All rights reserved</p>
+        <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
+        <p id="lastModified"></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lesson Feedback Form</title>
+    <meta name="description" content="Music lesson feedback page.">
+    <meta name="author" content="Esteban Montero">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/cssdefinitivo.css">
+</head>
+<body>
+
+
+
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="Harmony Music Academy">
+        </a>
+        <button id="menu"></button> <!-- Hamburger Menu Button -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="form.html">Feedback Form</a>
+        </nav>
+
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-group">
+                <label for="lesson-type">Music Lesson Feedback Form</label>
+                <select id="lesson-type" name="lessonType" required>
+                    <option value="" disabled selected>Select a Lesson ...</option>
+                    <option value="Piano">Piano</option>
+                    <option value="Violin">Violin</option>
+                    <option value="Guitar">Guitar</option>
+                    <option value="Voice">Voice</option>
+                </select>
+                <p id="lesson-description" class="lesson-description"></p>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lesson-date">Date of Lesson</label>
+                <input type="date" id="lesson-date" name="lessonDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Which features did you find useful in the lesson? (check all that apply)</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature-1" name="usefulFeatures" value="Individual Attention">
+                    <label for="feature-1">Individual Attention</label>
+                    <input type="checkbox" id="feature-2" name="usefulFeatures" value="Clear Instructions">
+                    <label for="feature-2">Clear Instructions</label>
+                    <input type="checkbox" id="feature-3" name="usefulFeatures" value="Practical Exercises">
+                    <label for="feature-3">Practical Exercises</label>
+                    <input type="checkbox" id="feature-4" name="usefulFeatures" value="Theory Integration">
+                    <label for="feature-4">Theory Integration</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="written-review">Written Review</label>
+                <textarea id="written-review" name="writtenReview"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" name="userName">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  Music Academy - All rights reserved</p>
+        <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
+        <p id="lastModified"></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

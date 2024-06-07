@@ -11,6 +11,10 @@ h1, h2, h3 {
     color: #003366;
 }
 
+ul li {
+    color:white
+}
+
 .accent {
     color: #FFD700;
 }

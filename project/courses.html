@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cssdefinitivo.css">
+    <title>COURSES</title>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Harmony Music Academy">
+            </a>
+            <button id="menu"></button> <!-- Hamburger Menu Button -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="siteplan.html">Site Plan</a>
+                <a href="form.html">Feedback Form</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="music-box">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hero-large-piano.webp">
+                    <source media="(min-width: 500px)" srcset="images/hero-medium-piano.webp">
+                    <img src="images/hero-small-piano.webp" alt="Piano, Violin, and Guitar">
+                </picture>
+
+            </div>
+            <section id="hero-msg">
+
+               <div class="button-box">
+                   <a class="book" href="contactus.html">Sign up Now</a>
+               </div>
+            </section>
+        </div>
+    <main class="courses-grid">
+            <section class="Beginners">
+                <img class="card-img" src="images/piano_lessons.png" alt="Lessons">
+                <h2>Beginners</h2>
+                <h4>• Introduction to Piano: Learn the basics of piano playing, including hand positioning, simple scales, and beginner pieces.</h4>
+                <h4>• Violin Fundamentals: Get started with the violin, mastering bowing techniques, finger placements, and easy melodies.</h4>
+                <h4>• Guitar Basics: Begin your guitar journey with chords, strumming patterns, and basic songs.</h4>
+            </section>
+            <section class="Intermediate">
+                <img class="card-img" src="images/violin_lessons.png" alt="Lessons">
+                <h2>Intermediate</h2>
+                <h4>• Piano Techniques: Enhance your skills with more complex pieces, scales, and finger exercises.</h4>
+                <h4>• Violin Mastery: Improve your violin playing with advanced bowing, vibrato, and challenging compositions.</h4>
+                <h4>• Guitar Skills: Develop your guitar playing with barre chords, fingerstyle techniques, and intermediate songs.</h4>
+            </section>
+            <section class="Advanced">
+                <img class="card-img" src="images/guitar_lessons.png" alt="Lessons">
+                <h2>Advanced</h2>
+                <h4>• Piano Mastery: Perfect your piano performance with advanced pieces, improvisation, and complex techniques.</h4>
+                <h4>• Violin Virtuosity: Achieve violin excellence with high-level repertoire, advanced techniques, and performance skills.</h4>
+                <h4>• Guitar Expertise: Master the guitar with soloing, complex rhythms, and professional-level pieces.</h4>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  Music Academy - All rights reserved</p>
+        <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
+        <p id="lastModified"></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans&display=swap');
+
+
+body{
+    
+    background-color: #0a081c;
+}
+
+#content{
+    max-width:  1600px;
+    margin: 0 auto;
+    width: 100%;
+ 
+
+}
+nav a {
+    text-align: center;
+    background-color:  #0a081c;
+    text-decoration: none;
+    padding: 25px 25px;
+
+}
+
+nav a:hover{
+    background-color: black;
+    color: #d9c2a3;
+}
+
+.home-tittle{     background-color: black;
+    color: #d9c2a3;
+    
+}
+
+h4{    background-color: rgba(92, 73, 29, 0);
+    color: white;}
+
+
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: left;
+
+}
+
+.button-box{
+    text-align: center;
+}
+
+.elementor-button{
+    text-align: center;
+}
+
+
+main section{
+    text-align: center;
+
+}
+
+#background{
+    height:300px;
+
+}
+
+header {
+    background-color: #0a081c;
+}
+
+.book, .join {
+    background-color: aqua;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 2.25rem;
+}
+
+.book:hover, .join:hover{
+    background-color: blue;
+    color: #d9c2a3;
+}
+
+.msg{
+    background-color: rgb(92, 73, 29);
+}
+.msg h2 {
+    color: white;
+    
+}
+.msg p{
+    color: white;
+}
+.msg-member {
+    color: white;
+}
+
+.msg-interactive {
+    color: white;
+}
+
+footer{
+    background-color: rgb(92, 73, 29);
+    color: white;
+    
+}
+footer a{
+    background-color: rgb(174, 162, 162);
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: rgb(173, 149, 149);
+    color: #d9c2a3;
+}
+
+footer p {
+    font-size: 1.2em;
+}  
+
+ 
+footer p a:hover {
+    text-decoration: underline;
+}   
+
+.logo{
+    width: 80px;
+}
+
+.icon{ 
+    width: 80px;
+
+}
+
+#hero-img {
+    width:100%
+
+}
+
+/*fonts*/
+
+
+
+body, h1{
+    font-family: 'electrolize',sans-serif; 
+    font-size: 22px;
+    margin : 0; /*with this line of code there is no space between the picture and background */
+    padding: 0;
+}
+
+ h2, h3,  h5, h6, .msg h2, #hero-msg h1{
+    font-family: 'fira sans',Helvetica, sans-serif;
+    font-size: 60px;
+    color : white;
+
+}
+     
+
+.home-title, h4, p {
+    font-family: 'electrolize',sans-serif; 
+    font-size: 1.5em;
+}
+
+.book, join {
+    font-size: 18px;
+}
+
+.msg p {
+    font-size: 0.8em;
+
+}
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em; 
+}
+
+h2 {
+    margin: 0;
+}
+
+
+
+
+/*display grids  for erase*/
+
+
+
+#hero {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25% 25%;
+
+    
+}
+
+#music-box {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+
+#hero-msg {
+    grid-column: 1/3;
+    grid-row: 2/6;
+
+
+
+}
+
+
+
+
+/*  Heder grid */
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+
+
+
+  .elementor-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+   
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+
+
+}
+
+/* Hover effect */
+.elementor-button:hover {
+
+    color:aqua
+
+}
+
+/* Style the button text */
+.elementor-button-text {
+    font-size: 16px; /* Set your desired font size */
+}
+
+#hero-msg {
+    margin-left: 100px;
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: #f89d00;
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+footer a {
+    background-color: rgb(174, 162, 162);
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: rgb(173, 149, 149);
+    color: #d9c2a3;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* main grid */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.msg-week,
+.msg-member,
+.chart{
+    background-color: #f89d00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.msg-week {
+    grid-column: 1; 
+    grid-row: 1; 
+}
+
+.msg-member {
+    grid-column: 2; 
+    grid-row: 1; 
+}
+
+.chart {
+    grid-column: 1/3; 
+    grid-row: 2/3; 
+}
+
+.msg-interactive {
+    grid-column: 2/2; 
+    grid-row: 2/3; 
+    z-index: 1; 
+}
+
+.msg-week h2,
+.msg-member h2,
+.msg-interactive p {
+    margin: 20;
+}
+
+
+.msg-week{
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 70%; 
+    text-align: center;
+
+}
+
+
+.msg-member {    
+    
+    box-sizing: border-box;
+    width: 100%; 
+    height: 70%; 
+    text-align: center;
+
+
+}
+.chart
+ {
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.msg-interactive
+ {
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 0%; 
+}
+
+
+
+/* courses */
+/*
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(13, 1fr) ;
+}
+             
+.card-img  {
+    width:100%
+}    
+
+
+
+
+
+.Beginners{
+    grid-column: 2/5;
+    grid-row: 1/3;
+}
+
+.Intermediate{
+    grid-column: 6/9;
+    grid-row: 1/3;
+
+}
+
+.Advanced{
+    grid-column: 10/13;
+    grid-row: 1/3;
+}
+
+/*responsive design*/
+
+
+@media screen and (max-width: 900px) {
+    #hero, .courses-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+
+
+}
+            
+
+#discover-msg{
+    text-align: center;
+}
+
+#background-contact{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color:#f89d00;
+}
+
+.contactus{    
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.contactus p {
+    color: white;
+}

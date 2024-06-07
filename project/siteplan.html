@@ -7,22 +7,38 @@
     <meta name="description" content="Project site plan for music academy web page">
     <meta name="author" content="Esteban Montero">
     <link rel="stylesheet" href="styles/siteplan.css"> 
+    <link rel="stylesheet" href="styles/cssdefinitivo.css"> 
 </head>
 <body>
     <header>
-        <h1>Academy Music  - Site Plan Document</h1>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="Harmony Music Academy">
+        </a>
+
+        <button id="menu"></button> <!-- Hamburger Menu Button -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="form.html">Feedback Form</a>
+        </nav>
+
     </header>
 
+    
+
     <div class="content">
+        <h1>Academy Music  - Site Plan Document</h1>
+        <h1> </h1>
         <h2>Site Name</h2>
         <p><strong>Academy Music </strong></p>
         <p><em>Reason for Selection:</em> The name "Academy Music" clearly identifies the site as a central resource for music education, aimed at both students and teachers. It conveys professionalism and inclusivity, making it attractive to a wide audience interested in music learning and resources.</p>
-        <p><em>Domain :</em> academymusic.com.co</p>
+        <p><em>Domain :</em> musicacademy.com.co</p>
     </div>
 
     <div class="content">
         <h2>Site Purpose</h2>
-        <p>The purpose of the Academy Music  website is to provide a comprehensive resource for music students. The site will offer instructional materials, course listings, event calendars, and a platform for community engagement. Additionally, it will include information about the academy's programs, faculty, and enrollment procedures.</p>
+        <p>The purpose of the Music Academy  website is to provide a comprehensive resource for music students. The site will offer instructional materials, course listings, event calendars, and a platform for community engagement. Additionally, it will include information about the academy's programs, faculty, and enrollment procedures.</p>
     </div>
 
     <div class="content">
@@ -87,8 +103,25 @@
         </p>
     </div>
 
+    
+
     <footer>
-        <p class="footer">&copy; 2024 Academy Music . All rights reserved.</p>
+        <p>&copy; <span id="currentyear"></span>  Music Academy - All rights reserved</p>
+        <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
+        <p id="lastModified"></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
     </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
